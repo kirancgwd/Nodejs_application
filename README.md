@@ -1,26 +1,4 @@
 ### Deploying a Node Js Application on AWS EC2
-
-### Testing the project locally
-
-1. Clone this project
-```
-git clone https://github.com/verma-kunal/AWS-Session.git
-```
-2. Go inside the folder and Setup the following environment variables - `(.env)` file
-```
-touch .env
-
-DOMAIN= ""
-PORT=3000
-STATIC_DIR="./client"
-
-PUBLISHABLE_KEY=""
-SECRET_KEY=""
-```
-3. Initialise and start the project
-```
-npm install
-npm run start
 ```
 
 ### Set up an AWS EC2 instance
@@ -44,7 +22,13 @@ ssh -i instance.pem ubunutu@<IP_ADDRESS>
 sudo apt update
 ```
 3. Install Git - [Guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-22-04) 
-4. Configure Node.js and `npm` - [Guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04)
+4. Configure Node.js and `npm`
+sudo apt update
+sudo apt install nodejs
+node -v
+sudo apt install npm
+
+ - [Guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04)
 
 ### Deploying the project on AWS
 
