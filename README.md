@@ -8,6 +8,8 @@ git clone https://github.com/verma-kunal/AWS-Session.git
 ```
 2. Go inside the folder and Setup the following environment variables - `(.env)` file
 ```
+touch .env
+
 DOMAIN= ""
 PORT=3000
 STATIC_DIR="./client"
