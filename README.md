@@ -21,14 +21,15 @@ ssh -i instance.pem ubunutu@<IP_ADDRESS>
 ```
 sudo apt update
 ```
-3. Install Git - [Guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-22-04) 
+3. Install Git -
+
+sudo apt install git
+
 4. Configure Node.js and `npm`
 sudo apt update
 sudo apt install nodejs
 node -v
 sudo apt install npm
-
- - [Guide by DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-22-04)
 
 ### Deploying the project on AWS
 
